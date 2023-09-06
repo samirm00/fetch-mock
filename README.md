@@ -16,7 +16,7 @@ Use these mock responses during development and testing to ensure your applicati
 
 ### Using `fetch-mock` library in api-movie
 
-In the api-movie section, we take advantage of the fetch-mock library to simplify mocking the Fetch API. fetch-mock provides an elegant way to intercept and mock network requests without manual intervention. Here's how to use it:
+In the api-movie section, we take advantage of the fetch-mock library to simplify mocking the Fetch API. fetch-mock provides an elegant way to intercept and mock network requests without manual intervention. 
 
 ### Set up
 
@@ -26,7 +26,7 @@ In the api-movie section, we take advantage of the fetch-mock library to simplif
 npm install
 ```
 
-#### To format your file
+#### To format your files
 
 ```bash
 npm run format
