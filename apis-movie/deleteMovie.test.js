@@ -12,11 +12,12 @@ describe('deleteMovie function', () => {
         const deleteUrl = `${baseUrl}/${movieId}`;
 
         fetchMock.delete(deleteUrl, {
-            status: 200
+            status: 200,
+            body: 'movie is deleted'
         });
 
         const response = await deleteMovie(movieId);
-        expect(response).toBeNull();
+        expect(response).toEqual('movie is deleted');
     });
 
     test('should handle errors gracefully', async () => {

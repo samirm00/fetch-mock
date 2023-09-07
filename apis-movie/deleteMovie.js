@@ -7,11 +7,11 @@ const deleteMovie = async (id) => {
         });
         if (!res.ok) {
             throw new Error(
-                `Failed to fetch movies with status : ${res.status}`
+                `Failed to delete movies with status : ${res.status}`
             );
         }
         if (res.status === 200) {
-            return null;
+            return 'movie is deleted';
         }
     } catch (err) {
         console.error(err);
